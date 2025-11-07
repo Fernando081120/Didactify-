@@ -1,0 +1,163 @@
+/* General */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%; /* Asegura que el contenido ocupe toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Distribuye el contenido verticalmente */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el título de las promociones */
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+    padding: 20px;
+}
+
+/* Estilo para el header */
+header {
+    background-color: #1750ac; /* Fondo oscuro */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #1750ac;
+}
+
+.logo img {
+    height: 50px;  /* Ajusta el tamaño del logo */
+}
+
+nav .nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    color: #c7efed;/* Limita el ancho máximo de los botones */
+}
+
+nav .nav-button {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+nav .nav-button:hover {
+    background-color: #c7efed; /* Fondo más claro al pasar el mouse */
+}
+
+nav .nav-button:active {
+    background-color: #c7efed; /* Fondo aún más oscuro al hacer clic */
+}
+
+/* Estilo para el texto de bienvenida */
+nav .nav-button span {
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+
+
+
+/* Footer */
+footer {
+    position: static; /* Cambiar de fixed a static */
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+footer .footer-logo img {
+    max-height: 80px;
+}
+
+footer .footer-links,
+footer .footer-social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-links a,
+footer .footer-social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+footer .footer-links a:hover,
+footer .footer-social a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-links,
+    footer .footer-social {
+        margin-top: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
