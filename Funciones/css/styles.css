@@ -1,0 +1,169 @@
+/* General */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%; /* Asegura que el contenido ocupe toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Distribuye el contenido verticalmente */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el título de las promociones */
+h1 {
+    font-size: 24px;
+    color: #153342;
+    text-align: center;
+    margin: 20px 0;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #153342; /* Fondo oscuro */
+    padding: 10px 0; /* Espaciado interno */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor principal del header */
+.header-container {
+    display: flex;
+    justify-content: center; 
+    color: #20dad8;/* Centra los elementos horizontalmente */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative; /* Para que el logo no interfiera con el centrado */
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    left: 100px; /* Coloca el logo a la izquierda */
+}
+
+.logo img {
+    height: 500px;
+}
+
+/* Barra de navegación */
+nav .nav-buttons {
+    display: flex;
+    gap: 10px; /* Espaciado uniforme entre botones */
+    justify-content: center; /* Centra los botones dentro de este contenedor */
+}
+
+/* Botones de navegación */
+nav .nav-button {
+    background-color: #555;
+    color: black;
+    width: 120px; /* Ancho fijo para todos los botones */
+    height: 40px; /* Altura fija */
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar texto horizontal y verticalmente */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+/* Efectos hover y active */
+nav .nav-button:hover {
+    background-color: #777;
+}
+
+nav .nav-button:active {
+    background-color: #444;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Apila el logo y la barra de navegación */
+    }
+
+    nav .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px; /* Espaciado reducido en pantallas pequeñas */
+    }
+
+    nav .nav-button {
+        width: 100%; /* Ocupa todo el ancho */
+    }
+}
+
+
+
+/* Footer */
+footer {
+    position: static; /* Cambiar de fixed a static */
+    background-color: #153342;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer .footer-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+footer .footer-logo img {
+    max-height: 400px;
+}
+
+footer .footer-links,
+footer .footer-social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-links a,
+footer .footer-social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+footer .footer-links a:hover,
+footer .footer-social a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
